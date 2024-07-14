@@ -8,10 +8,10 @@ public class ProjectConfiguration {
     private final WebConfig webConfig;
 
     public ProjectConfiguration() {
-        this.webConfig = ConfigFactory.create(WebConfig.class, System.getProperties());
+        this.webConfig = ConfigFactory.create(WebConfig.class);
     }
 
-    public void webConfig() {
+    public void setWebConfig() {
         Configuration.baseUrl = webConfig.baseUrl();
         Configuration.browser = webConfig.browser();
         Configuration.browserVersion = webConfig.browserVersion();
