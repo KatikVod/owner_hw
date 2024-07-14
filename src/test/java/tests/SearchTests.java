@@ -9,7 +9,7 @@ public class SearchTests extends TestBase {
     MainPage mainPage = new MainPage();
 
     @Test
-    void SearchTest() {
+    void searchTest() {
         mainPage.openPage()
                 .searchByText(searchQuery)
                 .checkSearchResults(searchQuery);
