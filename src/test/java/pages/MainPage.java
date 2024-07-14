@@ -20,7 +20,7 @@ public class MainPage {
 
     public MainPage searchByText(String searchQuery) {
         searchInput.click();
-        searchInput.sendKeys(searchQuery);
+        searchInput.setValue(searchQuery);
         searchInput.pressEnter();
         return this;
     }
