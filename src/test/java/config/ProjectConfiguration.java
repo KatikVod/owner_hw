@@ -4,7 +4,12 @@ import com.codeborne.selenide.Configuration;
 import org.aeonbits.owner.ConfigFactory;
 
 public class ProjectConfiguration {
-    private final WebConfig webConfig = ConfigFactory.create(WebConfig.class, System.getProperties());
+
+    private final WebConfig webConfig;
+
+    public ProjectConfiguration() {
+        this.webConfig = ConfigFactory.create(WebConfig.class, System.getProperties());
+    }
 
     public void webConfig() {
         Configuration.baseUrl = webConfig.baseUrl();
