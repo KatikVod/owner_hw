@@ -16,7 +16,7 @@ public interface WebConfig extends Config {
     @DefaultValue("1920x1080")
     String browserSize();
 
-    @DefaultValue("https://www.wildberries.ru/")
+    @DefaultValue("https://www.wildberries.ru")
     String baseUrl();
 
     @DefaultValue("false")
