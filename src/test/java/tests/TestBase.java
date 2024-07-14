@@ -10,7 +10,7 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         ProjectConfiguration projectConfiguration = new ProjectConfiguration();
-        projectConfiguration.webConfig();
+        projectConfiguration.setWebConfig();
     }
 
     @AfterEach
