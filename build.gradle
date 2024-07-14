@@ -36,9 +36,8 @@ dependencies {
             'org.junit.jupiter:junit-jupiter:5.10.2',
             'org.slf4j:slf4j-simple:2.0.13',
             'org.assertj:assertj-core:3.26.0',
-            'org.aeonbits.owner:owner:1.0.12',
+            'org.aeonbits.owner:owner:1.0.4',
     )
-    runtimeOnly 'org.aspectj:aspectjweaver:1.9.22.1'
 }
 
 test {
