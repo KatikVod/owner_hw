@@ -3,7 +3,7 @@ plugins {
     id 'io.qameta.allure' version '2.11.2'
 }
 
-def selenideVersion = "6.13.0",
+def selenideVersion = "7.2.3",
     allureVersion = "2.27.0"
 
 allure {
