@@ -1,14 +1,12 @@
 package config;
 
 import com.codeborne.selenide.Configuration;
+import org.aeonbits.owner.ConfigFactory;
 
 public class ProjectConfiguration {
 
-    private final WebConfig webConfig;
-
-    public ProjectConfiguration(WebConfig webConfig) {
-        this.webConfig = webConfig;
-    }
+    private static final WebConfig webConfig =
+            ConfigFactory.create(WebConfig.class, System.getProperties());
 
     public void setWebConfig() {
         Configuration.baseUrl = webConfig.baseUrl();

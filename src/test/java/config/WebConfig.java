@@ -20,7 +20,7 @@ public interface WebConfig extends Config {
     String baseUrl();
 
     @DefaultValue("false")
-    Boolean isRemote();
+    boolean isRemote();
 
     String remoteUrl();
 }

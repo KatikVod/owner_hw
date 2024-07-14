@@ -8,12 +8,9 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 
 public class TestBase {
-
-    private static final WebConfig webConfig =
-            ConfigFactory.create(WebConfig.class, System.getProperties());
     @BeforeAll
     static void beforeAll() {
-        ProjectConfiguration projectConfiguration = new ProjectConfiguration(webConfig);
+        ProjectConfiguration projectConfiguration = new ProjectConfiguration();
         projectConfiguration.setWebConfig();
     }
 
